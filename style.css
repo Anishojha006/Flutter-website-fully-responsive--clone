@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(244, 244, 244);
+  font-size: clamp(14px, 1vw, 18px);
+}
+
+body {
+  background-color: #1d1d1d;
+}
+
+main section.view1 {
+  background-color: #1a68d3;
+  background-image: radial-gradient(ellipse at bottom, #1a68d3 5%, transparent 60%), linear-gradient(136deg, transparent, #71c7ee 290%), linear-gradient(115deg, #9d9af1, transparent 40%), linear-gradient(180deg, transparent 0, #1a68d3 70%), radial-gradient(ellipse at -70% -180%, transparent 80%, #71c7ee 0), radial-gradient(ellipse at bottom, #1a68d3 40%, transparent 80%), radial-gradient(ellipse at 5% 340%, transparent 80%, #bfc2f4 0);
+  overflow: hidden;
+}
+main section.view1 header {
+  padding: 1rem 1rem;
+  width: 100%;
+  background-color: #1a68d3;
+}
+main section.view1 header h1 {
+  font-size: 1rem;
+}
+main section.view1 nav {
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+  justify-content: center;
+}
+main section.view1 nav img {
+  height: 2rem;
+}
+main section.view1 nav i {
+  padding-top: 1rem;
+  font-size: 1.5rem;
+}
+main section.view1 .topImg-Text {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+}
+main section.view1 .topImg-Text h1 {
+  font-size: 3rem;
+  width: 91%;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
