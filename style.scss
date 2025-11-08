@@ -25,7 +25,7 @@ main{
     section.view1{
     background-color: #1a68d3;
     background-image: radial-gradient(ellipse at bottom, #1a68d3 5%, transparent 60%), linear-gradient(136deg, transparent, #71c7ee 290%), linear-gradient(115deg, #9d9af1, transparent 40%), linear-gradient(180deg, transparent 0, #1a68d3 70%), radial-gradient(ellipse at -70% -180%, transparent 80%, #71c7ee 0), radial-gradient(ellipse at bottom, #1a68d3 40%, transparent 80%), radial-gradient(ellipse at 5% 340%, transparent 80%, #bfc2f4 0);
-    overflow: hidden;
+
         header{
         padding: 1rem 1rem;
         width: 100%;
@@ -51,14 +51,45 @@ main{
 
             .topImg-Text{
             @include flex-column(column,0rem);
-            
 
               h1{
                 font-size: 3rem;
                 width:91%;
                 text-align: center;
-                // padding-left: 2rem;
               }
             }
+            .images{
+                width: 100%;
+                @include flex-column(row, 1rem);
+                justify-content: center;
+                overflow: hidden;
+                
+                img{
+                    flex-shrink: 0;
+                }
+
+                .img1{
+                height:40rem;
+                padding-left:40rem;
+                   
+                 }
+                .img2{
+                height: 20rem;
+
+                 }
+                .img3{
+                height:30rem;
+                }
+
+                .img4{
+                height: 20rem;
+                }
+
+                .img5{
+                width: 20rem;
+                }
+            }
+
+
     }
 }
