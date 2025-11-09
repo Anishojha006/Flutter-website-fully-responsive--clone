@@ -45,6 +45,9 @@ main section.view1 nav i {
   padding-top: 1rem;
   font-size: 1.5rem;
 }
+main section.view1 nav .nav-buttons {
+  display: none;
+}
 main section.view1 .topImg-Text {
   display: flex;
   flex-direction: column;
@@ -81,4 +84,34 @@ main section.view1 .images .img4 {
 }
 main section.view1 .images .img5 {
   width: 20rem;
+}
+
+@media (min-width: 900px) {
+  main section.view1 header h1 {
+    text-align: center;
+  }
+  main section.view1 nav {
+    justify-content: space-between;
+    padding-left: 2.5rem;
+  }
+  main section.view1 nav .hamburger {
+    display: none;
+  }
+  main section.view1 nav .nav-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+  }
+  main section.view1 nav .nav-buttons button {
+    width: -moz-fit-content;
+    width: fit-content;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 0.8rem 2rem;
+    color: #0468d7;
+    font-weight: bold;
+  }
+  main section.view1 nav i {
+    padding-top: 0rem;
+  }
 }/*# sourceMappingURL=style.css.map */

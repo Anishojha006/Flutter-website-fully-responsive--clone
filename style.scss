@@ -3,6 +3,14 @@
     flex-direction:$direction;
     gap: $gap;
 }
+@mixin button-style(){
+    width: fit-content;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 0.8rem 2rem;
+    color: #0468d7;
+    font-weight: bold;
+}
 *{
     padding: 0;
     margin: 0;
@@ -46,6 +54,10 @@ main{
                 i{
                  padding-top: 1rem;
                  font-size: 1.5rem;
+                }
+
+                .nav-buttons{
+                    display: none;
                 }
             }
 
@@ -92,4 +104,39 @@ main{
 
 
     }
+}
+@media (min-width:900px){ 
+    main{
+        section.view1{
+            
+            header{
+                
+                h1{
+            text-align: center;
+
+        }
+    }
+        nav{
+            justify-content: space-between;
+            padding-left:2.5rem;
+
+            .hamburger{
+                display: none;
+
+            }
+            .nav-buttons{
+                @include flex-column(row,3rem );
+              
+                button{
+                    @include button-style();
+                }
+
+            }
+            i{
+                padding-top: 0rem;
+            }
+        }
+        
+    }
+   }
 }
