@@ -1,7 +1,12 @@
+@font-face {
+  font-family: Sans-sarif;
+  src: url(/sans-sarif.woff2);
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Sans-sarif;
 }
 
 html, body {
@@ -15,10 +20,6 @@ html {
   font-size: clamp(14px, 1vw, 18px);
 }
 
-body {
-  background-color: #1d1d1d;
-}
-
 main section.view1 {
   background-color: #1a68d3;
   background-image: radial-gradient(ellipse at bottom, #1a68d3 5%, transparent 60%), linear-gradient(136deg, transparent, #71c7ee 290%), linear-gradient(115deg, #9d9af1, transparent 40%), linear-gradient(180deg, transparent 0, #1a68d3 70%), radial-gradient(ellipse at -70% -180%, transparent 80%, #71c7ee 0), radial-gradient(ellipse at bottom, #1a68d3 40%, transparent 80%), radial-gradient(ellipse at 5% 340%, transparent 80%, #bfc2f4 0);
@@ -29,7 +30,7 @@ main section.view1 header {
   background-color: #1a68d3;
 }
 main section.view1 header h1 {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 main section.view1 nav {
   padding: 2rem;
@@ -37,8 +38,13 @@ main section.view1 nav {
   flex-direction: row;
   gap: 10rem;
   justify-content: center;
+  position: sticky;
+  top: 3px;
 }
-main section.view1 nav img {
+main section.view1 nav .images {
+  overflow: hidden;
+}
+main section.view1 nav .images img {
   height: 2rem;
 }
 main section.view1 nav i {
@@ -49,25 +55,23 @@ main section.view1 nav .nav-buttons {
   display: none;
 }
 main section.view1 .topImg-Text {
-  display: flex;
-  flex-direction: column;
-  gap: 0rem;
+  padding-top: 4rem;
 }
 main section.view1 .topImg-Text h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   width: 91%;
   text-align: center;
 }
 main section.view1 .images {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  justify-content: center;
+  padding: 5rem 0rem;
   overflow: hidden;
 }
 main section.view1 .images img {
-  flex-shrink: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 40rem;
+  width: 95rem;
+  padding-right: 56rem;
 }
 main section.view1 .images .img1 {
   height: 40rem;
@@ -84,6 +88,112 @@ main section.view1 .images .img4 {
 }
 main section.view1 .images .img5 {
   width: 20rem;
+}
+main section.view1 .btn-text-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+main section.view1 .btn-text-bottom h1 {
+  padding: 1rem 1rem;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+main section.view1 .btn-text-bottom button {
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 0.8rem 2rem;
+  color: #0468d7;
+  font-weight: bold;
+}
+main section.view2 {
+  color: black;
+  overflow: hidden;
+}
+main section.view2 h2 {
+  font-weight: 500;
+  padding: 1rem 1rem;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+main section.view2 .tab-menue {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+main section.view2 .tab-menue button {
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 0.8rem 2rem;
+  color: #0468d7;
+  font-weight: bold;
+}
+main section.view2 .tab-menue .blue {
+  background-color: blue;
+  color: white;
+}
+main section.view2 .video .video-h1-p {
+  padding: 3rem;
+}
+main section.view2 .video .video-h1-p h1 {
+  text-align: left;
+  font-family: Sans-sarif;
+  color: #14c2ad;
+}
+main section.view2 .video .video-h1-p p {
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  color: #6a90b2;
+}
+main section.view2 .video .video-h1-p button {
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 2px solid #0468d7;
+  border-radius: 1.5rem;
+  padding: 0.8rem 2rem;
+  color: #0468d7;
+  font-weight: bold;
+  margin: 2rem 0;
+  background-color: white;
+}
+main section.view2 .multilatform {
+  padding: 2rem;
+}
+main section.view2 .multilatform img {
+  width: 100%;
+}
+main section.view2 .multilatform h4 {
+  color: #29c2fd;
+  font-size: 1.5rem;
+}
+main section.view2 .multilatform h2 {
+  text-align: left;
+  font-size: 3rem;
+  font-weight: 800;
+}
+main section.view2 .multilatform p {
+  color: #4a4a4a;
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+main section.view2 .multilatform button {
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 2px solid #0468d7;
+  border-radius: 1.5rem;
+  padding: 0.8rem 2rem;
+  color: #0468d7;
+  font-weight: bold;
 }
 
 @media (min-width: 900px) {
@@ -113,5 +223,16 @@ main section.view1 .images .img5 {
   }
   main section.view1 nav i {
     padding-top: 0rem;
+  }
+  main section.view1 .images {
+    width: 100%;
+  }
+  main section.view1 .images img {
+    padding: 0;
+    overflow: visible;
+    width: 100%;
+  }
+  main section.view1 .btn-text-bottom h1 {
+    width: 65%;
   }
 }/*# sourceMappingURL=style.css.map */
