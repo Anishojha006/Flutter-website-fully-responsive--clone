@@ -261,6 +261,25 @@ main{
         }
         }
         
-    }
+          }
+          section.view2{
+              width:100%;
+              justify-content: center;
+
+            h2{
+                font-size: 2rem;
+                width: 53%;
+                margin-top: 2rem;
+                margin-left: 20rem;
+
+            }
+            .tab-menue{
+            background-color: #f0f0f0;   
+            gap: 1rem;
+            justify-content: center;
+            border-radius: 2rem;
+            width: 50%;
+            }
+          }
    }
 }

@@ -235,4 +235,21 @@ main section.view2 .multilatform button {
   main section.view1 .btn-text-bottom h1 {
     width: 65%;
   }
+  main section.view2 {
+    width: 100%;
+    justify-content: center;
+  }
+  main section.view2 h2 {
+    font-size: 2rem;
+    width: 53%;
+    margin-top: 2rem;
+    margin-left: 20rem;
+  }
+  main section.view2 .tab-menue {
+    background-color: #f0f0f0;
+    gap: 1rem;
+    justify-content: center;
+    border-radius: 2rem;
+    width: 50%;
+  }
 }/*# sourceMappingURL=style.css.map */
