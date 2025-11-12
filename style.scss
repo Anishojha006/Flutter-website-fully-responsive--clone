@@ -14,6 +14,7 @@
     padding: 0.8rem 2rem;
     color: $color;
     font-weight: bold;
+    background-color: white;
 }
 *{
     padding: 0;
@@ -32,16 +33,20 @@ html {
 }
 
 main{
+    overflow: hidden;
+
     section.view1{
     background-color: #1a68d3;
     background-image: radial-gradient(ellipse at bottom, #1a68d3 5%, transparent 60%), linear-gradient(136deg, transparent, #71c7ee 290%), linear-gradient(115deg, #9d9af1, transparent 40%), linear-gradient(180deg, transparent 0, #1a68d3 70%), radial-gradient(ellipse at -70% -180%, transparent 80%, #71c7ee 0), radial-gradient(ellipse at bottom, #1a68d3 40%, transparent 80%), radial-gradient(ellipse at 5% 340%, transparent 80%, #bfc2f4 0);
-    // overflow: hidden;
+    
         header{
         padding: 1rem 1rem;
         width: 100%;
         background-color: #1a68d3;
+
             h1{
-                font-size: 0.8rem;             
+                font-size: 0.8rem; 
+
             }
         }
         nav{
@@ -50,10 +55,13 @@ main{
             justify-content: center;
             position: sticky;
             top: 3px;
+
                 .images{
                 overflow: hidden;
+
                 img{
                     height: 2rem;
+
                  }
                 }
 
@@ -147,16 +155,20 @@ main{
 
            button{
             @include button-style();
+            transition: all ease 0.5s;
            }
            .blue{
             background-color: blue;
             color: white;
            }
         }
+        button:hover {
+            background-color:rgba(171, 165, 165, 0.558);
+        }
 
         .video{
             .video-h1-p{
-                padding:3rem;
+                padding:2.5rem;
 
                 h1{
                     
@@ -213,10 +225,129 @@ main{
                 @include button-style(2px solid #0468d7 );
             }
         }
+
+        .experience{
+            margin: 1rem;
+            margin-top: 5rem;
+        @include flex-column(column,0rem);
+         
+         .img{
+            width: 100%;
+            img{
+                width: 100%;
+                padding:2rem 1.2rem;
+            }
+
+        }
+        .info{
+             h4{
+                color:#14c2ad;
+                font-size: 1.5rem;
+            }
+
+            h2{
+              text-align: left;
+              font-size:3rem;
+              font-weight: 800;
+
+            }
+
+            p{
+             color: #4a4a4a;
+             font-size: 1.3rem;
+             padding: 1rem;
+
+            }
+            button{
+                @include button-style(2px solid #0468d7,#0468d7 )
+            }
+        }
+        }
+         .flutter-interact{
+            margin: 1rem;
+            margin-top: 5rem;
+        @include flex-column(column,0rem);
+         
+         .img{
+            width: 100%;
+            img{
+                width: 100%;
+                padding:2rem 1rem;
+            }
+
+        }
+        .info{
+            padding-left: 1rem;
+             h4{
+                color: #f25d50;
+                font-size: 1.5rem;
+            }
+
+            h2{
+              text-align: left;
+              font-size:3rem;
+              font-weight: 800;
+
+            }
+
+            p{
+             color: #4a4a4a;
+             font-size: 1.3rem;
+             padding: 1rem;
+
+            }
+            button{
+                @include button-style(2px solid #0468d7,#0468d7 )
+            }
+        }
+        }
+        .flutter-and-google{
+        margin-top: 5rem;
+        width: 100%;
+        @include flex-column(column,0rem);
+         
+         .img{
+            width: 100%;
+            img{
+                width: 100%;
+                padding:2rem 1rem;
+            }
+
+        }
+        .info{
+        width: 100%;
+        text-align: left;
+
+            h4{
+                padding-left: 1rem;;
+                color:#14c2ad;
+                font-size: 1.5rem;
+            }
+
+            h2{
+              text-align: left;
+              font-size:3rem;
+              font-weight: 800;
+
+            }
+
+            p{
+             color: #4a4a4a;
+             font-size: 1.3rem;
+            //  padding: 1rem;
+
+            }
+            button{
+                @include button-style(2px solid #0468d7,#0468d7 )
+                
+            }
+        }
+        }
     }
 }
 
 @media (min-width:900px){ 
+
     main{
         section.view1{
             
@@ -228,8 +359,8 @@ main{
         }
     }
         nav{
-            justify-content: space-between;
-            padding-left:2.5rem;
+            justify-content:center;
+            gap:5rem;
 
             .hamburger{
                 display: none;
@@ -240,6 +371,7 @@ main{
               
                 button{
                     @include button-style();
+                    
                 }
 
             }
@@ -263,23 +395,101 @@ main{
         
           }
           section.view2{
+            @include flex-column(column,1rem);
               width:100%;
-              justify-content: center;
+              align-items: center;
 
             h2{
                 font-size: 2rem;
                 width: 53%;
                 margin-top: 2rem;
-                margin-left: 20rem;
 
             }
             .tab-menue{
             background-color: #f0f0f0;   
-            gap: 1rem;
+            gap: 0rem;
             justify-content: center;
             border-radius: 2rem;
+            width: 20%;
+            padding: 0;
+
+            }
+
+            .video{
+            @include flex-column(row,0rem);
+            justify-content: center;
+            width: 100%;
+            justify-content:center;
+            align-items: center;
+
+            video{
             width: 50%;
+
+          }
+           .video-h1-p{
+           margin: 0;
+           padding: 0;
+           width: 21%;
+           }
+         }
+         .multilatform{
+           @include flex-column(row-reverse,0rem);
+           align-items: center;
+           justify-content: center;
+           width: 100%;
+           img{
+            width: 30%;
+
+           }
+           div{
+            width: 35%;
+            h4{
+            font-size: 1rem;
+            }
+
+            h2{
+                width:100%;
+            }
+
+            p{
+                width: 100%;
+            }
+            button{
+                margin-top: 1rem;
+            }
+
+           }
+         }
+         .experience{
+            margin-left: 10rem;
+            width: 100%;
+           @include flex-column(row,1rem);
+           justify-content: center;
+           align-items: center;
+        
+        .img{
+         width: 40%;
+
+         img{
+            width: 80%;
+
+         }
+          }
+          .info{
+            padding-bottom: 5rem;
+            width: 50%;
+
+            h2{
+                margin-top:0;
+                padding-top: 1rem;
+
+            }
+            p{
+                width: 67%;
+            }
+            button{
+                font-size: 0.7rem;
             }
           }
-   }
-}
+         }
+}}}
