@@ -381,6 +381,66 @@ main{
            
         }
 
+        .usedby{
+            
+
+            .usedby-inside {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 220px 100px 100px 100px;
+    column-gap: 24px;
+    row-gap: 24px;
+
+    width: 964px;
+    height: 535px;
+
+    box-sizing: border-box;
+    color: rgb(74, 74, 74);
+
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+
+    text-align: center;
+    .logo-col {
+    box-sizing: border-box;
+    color: rgb(74, 74, 74);
+    display: block;
+
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+
+    width: 100px;
+    height: 535px;
+
+    position: relative;
+    top: 60px;
+
+    text-align: center;
+}
+.logo-centerpiece{
+    box-sizing: border-box;
+    color: rgb(74, 74, 74);
+    display: block;
+
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+
+    width: 220px;
+    height: 535px;
+
+    text-align: center;
+}
+
+
+}
+  
+        }
+
     }
 }
 
