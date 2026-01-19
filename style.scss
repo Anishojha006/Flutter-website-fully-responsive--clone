@@ -422,7 +422,8 @@ main{
             }
         }
 
-    section.view4{
+    
+     section.view4{
         padding: 3rem 2rem;
         height: 100%;
         width: 100%;
@@ -472,7 +473,56 @@ main{
          }
 
        }
+   
+   
+     section.view5{
+      width: 100%;
+      height: 100%;
+      margin-bottom: 2rem;
+      padding: 1rem 1rem;
+       h2{
+        color:black;
+        font-size:2.5rem;
+        padding-left: 2rem;
+        margin-bottom: 40px;;
+       }
+
+       .view5-container{
+        margin: 1rem;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+        transition: 0.3s;
+        border-radius: 1.5rem;
+
+          
+        .view5-innercontainer{
+            width: 100%;
+        
+            img{
+                padding: 2.5rem;
+                padding-bottom: 0;
+                width:100%;
+
+            }
+            h4{
+                text-align: center;
+                color: black;
+                font-weight: 500;
+                font-size: 1.7rem;
+                margin-bottom: 5rem;
+            }
+            button{
+                @include button-style(none,black);
+                font-size: 1.2rem;
+                margin: 2rem 0rem;
+                width: fit-content;
+                
+            }
+        }
+       }
+     }
     }
+
 
 
 @media (min-width:900px){ 
