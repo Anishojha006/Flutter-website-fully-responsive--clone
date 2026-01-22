@@ -901,5 +901,37 @@ main{
                 }
             }
      }
-}
+         }
+
+         section.view3{
+            margin: 2rem 3rem;
+             
+            .developerstory{
+                display: flex;
+                position: relative;
+              
+                .upper{
+                    p{
+                        width: 60%;
+                        font-size: 1.8rem;
+                    }
+
+                    button{
+                        font-weight: 500;
+                        font-size: 0.8rem;
+                    }
+                }
+
+                img{
+                    top: -78%;
+                    width: 40%;
+                    position: absolute;
+                    left:59%;
+                    object-fit: contain;
+                    height: 20rem;
+                    
+                }
+            }
+         }
+           
 }}
