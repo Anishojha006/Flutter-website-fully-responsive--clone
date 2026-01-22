@@ -671,8 +671,26 @@ main{
             margin: 0;
             margin-left: 2rem;
             margin-right: 2rem;
-            margin-bottom: 1rem;
+            // margin-bottom: 1rem;
             margin-top:1.5rem;
+        }
+
+        .footer-text{
+        color:#666161;
+        text-align: center;
+        font-size: 1.1rem;
+        padding: 2rem;
+        padding-bottom: 0;
+        }
+        .last-footer-element{
+            color: #666161;
+            margin-bottom: 2rem;
+            ul{
+                @include flex-column(row,1rem);
+                li{
+                    list-style: none;
+                }
+            }
         }
     }
     }
@@ -700,10 +718,13 @@ main{
 
             }
             .nav-buttons{
-                @include flex-column(row,3rem );
+                @include flex-column(row,3rem);
+                font-size:0.7rem;
               
                 button{
                     @include button-style();
+                    font-size: 0.8rem;
+                    margin-bottom: 1rem;
                     
                 }
 
@@ -825,4 +846,60 @@ main{
             }
           }
          }
-}}}
+         .flutter-interact{
+            margin-top: 1rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            padding: 1rem 1rem;
+           
+            .flutter-interact-part1{
+                display: flex;
+                flex-direction: row-reverse;
+                padding: 3rem;
+
+                img{
+                    padding:2rem 3rem;
+                }
+                .info{
+                  h4{
+                    font-size:0.8rem;
+                    margin-left:1.2rem;
+                  }
+                }
+            }
+
+            .flutter-and-google{
+                padding: 3rem;
+                flex-direction: row;
+
+                .img{
+                    img{
+                        padding: 2rem 2rem;
+                    }
+                }
+
+                .info{
+                    h4{
+                        font-size:0.8rem;
+                        color:#833ef2;
+                       
+                    }
+
+                    h2{
+                        width:100%;
+                        padding-top: 0;
+                    }
+
+                    p{
+                        font-size: 1rem;
+                    }
+
+                    button{
+                        font-size: 1rem;
+                        border: 1px solid #0468d7
+                    }
+                }
+            }
+     }
+}
+}}
