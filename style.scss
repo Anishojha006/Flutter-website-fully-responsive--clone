@@ -14,7 +14,7 @@
     padding: 0.8rem 2rem;
     color: $color;
     font-weight: bold;
-    background-color: white;
+    background-color:white;
 }
 *{
     padding: 0;
@@ -711,7 +711,11 @@ main{
     }
         nav{
             justify-content:center;
-            gap:5rem;
+            gap:25rem;
+
+            h4{
+                font-size: 1rem;;
+            }
 
             .hamburger{
                 display: none;
@@ -907,9 +911,11 @@ main{
             margin: 2rem 3rem;
              
             .developerstory{
+                padding: 4rem;
+                margin: 5rem;
                 display: flex;
                 position: relative;
-              
+
                 .upper{
                     p{
                         width: 60%;
@@ -923,12 +929,12 @@ main{
                 }
 
                 img{
-                    top: -78%;
-                    width: 40%;
-                    position: absolute;
-                    left:59%;
-                    object-fit: contain;
-                    height: 20rem;
+                top: -67%;
+                width: 40%;
+                position: absolute;
+                left: 59%;
+                object-fit: contain;
+                 height: 28rem;
                     
                 }
             }
