@@ -352,6 +352,9 @@ main section.view3 .developerstory img {
 main section.view3 .clients .img {
   margin-left: 1.5rem;
 }
+main section.view3 .clients .img .large-img-for-dekstop {
+  display: none;
+}
 main section.view3 .clients h4 {
   color: #4a4a4a;
   font-size: 1.2rem;
@@ -784,7 +787,7 @@ main footer .last-footer-element ul li {
     padding: 3rem;
   }
   main section.view2 .flutter-interact .flutter-interact-part1 img {
-    padding: 2rem 3rem;
+    padding: 2rem 8rem;
   }
   main section.view2 .flutter-interact .flutter-interact-part1 .info h4 {
     font-size: 0.8rem;
@@ -795,18 +798,23 @@ main footer .last-footer-element ul li {
     flex-direction: row;
   }
   main section.view2 .flutter-interact .flutter-and-google .img img {
-    padding: 2rem 2rem;
+    padding: 2rem 5rem;
+  }
+  main section.view2 .flutter-interact .flutter-and-google .info {
+    margin-bottom: 10rem;
+    padding: 1rem 9rem;
   }
   main section.view2 .flutter-interact .flutter-and-google .info h4 {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     color: #833ef2;
   }
   main section.view2 .flutter-interact .flutter-and-google .info h2 {
     width: 100%;
     padding-top: 0;
+    font-size: 3.5rem;
   }
   main section.view2 .flutter-interact .flutter-and-google .info p {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   main section.view2 .flutter-interact .flutter-and-google .info button {
     font-size: 1rem;
@@ -836,5 +844,43 @@ main footer .last-footer-element ul li {
     left: 59%;
     object-fit: contain;
     height: 28rem;
+  }
+  main section.view3 .clients .img img:nth-child(1) {
+    display: none;
+  }
+  main section.view3 .clients .img img:nth-child(2) {
+    display: block;
+    width: 100%;
+  }
+  main section.view3 .clients h2 {
+    padding: 1rem 28rem;
+  }
+  main section.view3 .clients p {
+    padding: 1rem 29.5rem;
+  }
+  main section.view4 {
+    height: 100%;
+    padding: 1rem 11rem;
+  }
+  main section.view4 .container {
+    display: flex;
+  }
+  main section.view4 .container .container-details {
+    padding-right: 0;
+  }
+  main section.view4 .container .container-details .container-btn {
+    flex-direction: row;
+  }
+  main section.view4 .container .container-details h3 {
+    font-size: 1.8rem;
+  }
+  main section.view4 .container .dart-img {
+    position: relative;
+  }
+  main section.view4 .container .dart-img img {
+    width: 80%;
+    position: absolute;
+    top: 28%;
+    left: 22%;
   }
 }/*# sourceMappingURL=style.css.map */

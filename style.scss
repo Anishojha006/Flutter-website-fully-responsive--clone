@@ -375,12 +375,19 @@ main{
                 width: 100%;
                 height: 100%;
                 margin-bottom: -1.5rem;
-            }  }
+
+            }
+          }
 
             .clients{
 
                 .img{
                     margin-left: 1.5rem;
+                    
+                  .large-img-for-dekstop{
+                    display: none;
+                    
+                 }
                 }
                 h4{
                  color:#4a4a4a;
@@ -862,7 +869,7 @@ main{
                 padding: 3rem;
 
                 img{
-                    padding:2rem 3rem;
+                    padding:2rem 8rem;
                 }
                 .info{
                   h4{
@@ -878,13 +885,16 @@ main{
 
                 .img{
                     img{
-                        padding: 2rem 2rem;
+                        padding: 2rem 5rem;
                     }
                 }
 
                 .info{
+                        margin-bottom: 10rem;
+                        padding: 1rem 9rem;
+
                     h4{
-                        font-size:0.8rem;
+                        font-size:1.2rem;
                         color:#833ef2;
                        
                     }
@@ -892,10 +902,11 @@ main{
                     h2{
                         width:100%;
                         padding-top: 0;
+                        font-size:3.5rem;
                     }
 
                     p{
-                        font-size: 1rem;
+                        font-size: 1.5rem;
                     }
 
                     button{
@@ -938,6 +949,61 @@ main{
                     
                 }
             }
+
+            .clients{
+
+                .img{
+
+                    img:nth-child(1){
+                        display: none;
+
+                    }
+                    img:nth-child(2){
+                        display: block;
+                        width: 100%;
+
+                    }
+                }
+
+                 h2{
+                    padding: 1rem 28rem;
+                    }
+                  p{
+                    padding: 1rem  29.5rem;
+                  }  
+            }
+         }
+
+         section.view4{
+          height: 100%;
+          padding: 1rem 11rem;
+            .container{
+                display: flex;
+                
+                
+                .container-details{
+                    padding-right: 0;
+
+                    .container-btn{
+                        flex-direction: row;
+                    }
+                    h3{
+                        font-size: 1.8rem;
+                    }
+                    
+                }
+                .dart-img{
+                     position: relative;
+
+                        img{
+                        width: 80%;
+                        position: absolute;
+                        top: 28%;
+                        left: 22%;
+                        }
+                    }
+            }
+
          }
            
 }}
