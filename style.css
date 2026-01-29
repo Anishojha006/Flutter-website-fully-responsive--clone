@@ -878,9 +878,33 @@ main footer .last-footer-element ul li {
     position: relative;
   }
   main section.view4 .container .dart-img img {
-    width: 80%;
+    width: 55%;
     position: absolute;
-    top: 28%;
-    left: 22%;
+    top: -21%;
+    left: 45%;
+  }
+  main section.view5 {
+    padding: 30rem 10rem;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+  }
+  main section.view5 .view5-container {
+    width: 40%;
+    background-color: white;
+  }
+  main section.view6 .view6-text {
+    display: flex;
+    flex-direction: row;
+    gap: 0rem;
+  }
+  main section.view6 .view6-text h2 {
+    font-size: 4rem;
+    padding-left: 13rem;
+  }
+  main section.view6 .view6-text .email-entry {
+    width: 70%;
+    height: 4rem;
+    border-radius: 5rem;
+    padding-top: 1.5rem;
   }
 }/*# sourceMappingURL=style.css.map */
