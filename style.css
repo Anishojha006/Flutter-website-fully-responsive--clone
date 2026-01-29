@@ -907,4 +907,28 @@ main footer .last-footer-element ul li {
     border-radius: 5rem;
     padding-top: 1.5rem;
   }
+  main section.view7 .view-7-details .text {
+    padding: 2rem;
+    margin: 2rem 3rem;
+  }
+  main section.view7 .view-7-details .text button {
+    margin-top: 2rem;
+    display: inline-block;
+  }
+  main section.view8 .inner-view8 {
+    display: flex;
+    flex-direction: row;
+    gap: 20rem;
+  }
+  main section.view8 .inner-view8 img {
+    padding-bottom: 18rem;
+  }
+  main section.view8 .inner-view8 .lists {
+    display: flex;
+    flex-direction: row;
+    gap: 15rem;
+  }
+  main section.view8 .inner-view8 .lists li {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=style.css.map */

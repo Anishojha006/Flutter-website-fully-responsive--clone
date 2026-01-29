@@ -1033,5 +1033,40 @@ main{
                   }
             }
          }
+
+         section.view7{
+
+            .view-7-details{
+
+                .text{
+                    padding: 2rem;
+                margin: 2rem 3rem;
+
+                button{
+                    margin-top: 2rem;
+                    display: inline-block;
+                }
+                }
+            }
+         }
+
+         section.view8{
+            
+            .inner-view8{
+                @include flex-column(row,20rem);
+
+                img{
+                    padding-bottom: 18rem;
+                }
+
+                .lists{
+                    @include flex-column(row,15rem);
+
+                    li{
+                        font-size: 1rem;
+                    }
+                }
+            }
+         }
            
 }}
